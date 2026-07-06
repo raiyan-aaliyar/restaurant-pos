@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:restobill/features/pos/presentation/widgets/category_list.dart';
 import 'package:restobill/features/pos/presentation/widgets/product_grid.dart';
 import 'package:restobill/features/pos/presentation/widgets/search_section.dart';
+import 'package:restobill/features/pos/presentation/widgets/cart_panel.dart';
 
 class PosScreen extends StatelessWidget {
   const PosScreen({super.key});
@@ -26,35 +27,76 @@ class PosScreen extends StatelessWidget {
         centerTitle: false,
         title: const Text(
           'Restaurant POS',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
         actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.dark_mode_outlined),
+          Builder(
+            builder: (context) {
+              return IconButton(
+                icon: const Icon(Icons.shopping_cart_outlined),
+                onPressed: () {
+                  showModalBottomSheet(
+                    context: context,
+                    isScrollControlled: true,
+                    builder: (_) {
+                      return const SizedBox(height: 600, child: CartPanel());
+                    },
+                  );
+                },
+              );
+            },
           ),
         ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
-        child: Column(
-          children: [
-            const SearchSection(),
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final desktop = constraints.maxWidth >= 1100;
 
-            const SizedBox(height: 20),
+            if (desktop) {
+              return Row(
+                children: [
+                  Expanded(
+                    flex: 3,
+                    child: Column(
+                      children: [
+                        const SearchSection(),
 
-            CategoryList(),
+                        const SizedBox(height: 20),
 
-            const SizedBox(height: 20),
+                        const CategoryList(),
 
-            Expanded(
-              child: ProductGrid(
-                crossAxisCount: crossAxisCount,
-              ),
-            ),
-          ],
+                        const SizedBox(height: 20),
+
+                        Expanded(
+                          child: ProductGrid(crossAxisCount: crossAxisCount),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  const SizedBox(width: 20),
+
+                  const Expanded(child: CartPanel()),
+                ],
+              );
+            }
+
+            return Column(
+              children: [
+                const SearchSection(),
+
+                const SizedBox(height: 20),
+
+                const CategoryList(),
+
+                const SizedBox(height: 20),
+
+                Expanded(child: ProductGrid(crossAxisCount: crossAxisCount)),
+              ],
+            );
+          },
         ),
       ),
     );

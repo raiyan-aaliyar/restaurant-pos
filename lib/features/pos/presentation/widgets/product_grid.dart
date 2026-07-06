@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
 import 'package:restobill/data/datasources/fake_data.dart';
+import 'package:restobill/features/pos/application/cart_provider.dart';
 import 'package:restobill/features/pos/presentation/widgets/product_card.dart';
 
-class ProductGrid extends StatelessWidget {
+class ProductGrid extends ConsumerWidget {
   const ProductGrid({
     super.key,
     required this.crossAxisCount,
@@ -11,7 +14,7 @@ class ProductGrid extends StatelessWidget {
   final int crossAxisCount;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return GridView.builder(
       itemCount: products.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -26,7 +29,7 @@ class ProductGrid extends StatelessWidget {
         return ProductCard(
           product: product,
           onTap: () {
-            debugPrint("${product.name} tapped");
+            ref.read(cartProvider.notifier).addProduct(product);
           },
         );
       },

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:restobill/data/datasources/fake_data.dart';
 import 'package:restobill/features/pos/application/cart_provider.dart';
+import 'package:restobill/features/pos/application/filtered_product_provider.dart';
 import 'package:restobill/features/pos/presentation/widgets/product_card.dart';
 
 class ProductGrid extends ConsumerWidget {
@@ -15,6 +15,8 @@ class ProductGrid extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final products = ref.watch(filteredProductsProvider);
+
     return GridView.builder(
       itemCount: products.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

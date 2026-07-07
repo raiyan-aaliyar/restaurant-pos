@@ -1,38 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class CategoryList extends StatelessWidget {
+import 'package:restobill/data/datasources/fake_data.dart';
+import 'package:restobill/features/pos/application/category_provider.dart';
+
+class CategoryList extends ConsumerWidget {
   const CategoryList({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final selected = ref.watch(categoryProvider);
+
     return SizedBox(
       height: 45,
-      child: ListView(
+      child: ListView.separated(
         scrollDirection: Axis.horizontal,
-        children: const [
-          _CategoryChip("All"),
-          _CategoryChip("Pizza"),
-          _CategoryChip("Burger"),
-          _CategoryChip("Drinks"),
-          _CategoryChip("Desserts"),
-          _CategoryChip("Snacks"),
-        ],
-      ),
-    );
-  }
-}
+        itemCount: categories.length,
+        separatorBuilder: (context, index) => const SizedBox(width: 10),
+        itemBuilder: (context, index) {
+          final category = categories[index];
 
-class _CategoryChip extends StatelessWidget {
-  final String title;
-
-  const _CategoryChip(this.title);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(right: 10),
-      child: Chip(
-        label: Text(title),
+          return ChoiceChip(
+            label: Text(category.name),
+            selected: selected == category.id,
+            onSelected: (_) {
+              ref.read(categoryProvider.notifier).select(category.id);
+            },
+          );
+        },
       ),
     );
   }

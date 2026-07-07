@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import 'package:restobill/features/pos/application/cart_provider.dart';
 import 'package:restobill/features/pos/presentation/widgets/cart_item_tile.dart';
 import 'package:restobill/features/pos/presentation/widgets/cart_summary.dart';
 import 'package:restobill/features/pos/presentation/widgets/checkout_button.dart';
+import 'package:restobill/features/pos/presentation/dialogs/checkout_dialog.dart';
 
 class CartPanel extends ConsumerWidget {
   const CartPanel({super.key});
@@ -20,43 +20,33 @@ class CartPanel extends ConsumerWidget {
           children: [
             const Text(
               "Current Order",
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
 
             const SizedBox(height: 16),
 
             Expanded(
               child: cart.items.isEmpty
-                  ? const Center(
-                      child: Text("Cart is empty"),
-                    )
+                  ? const Center(child: Text("Cart is empty"))
                   : ListView.builder(
                       itemCount: cart.items.length,
                       itemBuilder: (context, index) {
-                        return CartItemTile(
-                          item: cart.items[index],
-                        );
+                        return CartItemTile(item: cart.items[index]);
                       },
                     ),
             ),
 
             const Divider(),
 
-            CartSummary(
-              subtotal: cart.total,
-            ),
+            CartSummary(subtotal: cart.total),
 
             const SizedBox(height: 16),
 
             CheckoutButton(
               onPressed: () {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text("Checkout coming soon"),
-                  ),
+                showDialog(
+                  context: context,
+                  builder: (_) => const CheckoutDialog(),
                 );
               },
             ),

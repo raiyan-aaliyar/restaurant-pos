@@ -10,10 +10,10 @@ class SearchSection extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return AppSearchBar(
-      hintText: 'Search menu...',
+      hintText: "Search menu items...",
       onChanged: (value) {
-        ref.read(searchProvider.notifier).update(value);
+        ref.read(searchProvider.notifier).setSearch(value);
       },
     );
   }
-}
+} 

@@ -38,8 +38,11 @@ class CartPanel extends ConsumerWidget {
 
             const Divider(),
 
-            CartSummary(subtotal: cart.total),
-
+            CartSummary( 
+              subtotal: cart.subtotal,
+              tax: cart.tax,
+              total: cart.total,
+            ),
             const SizedBox(height: 16),
 
             CheckoutButton(

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:restobill/data/datasources/fake_data.dart';
-import 'package:restobill/features/pos/application/category_provider.dart';
+import 'package:yarpay/data/datasources/fake_data.dart';
+import 'package:yarpay/features/pos/application/category_provider.dart';
 
 class CategoryList extends ConsumerWidget {
   const CategoryList({super.key});

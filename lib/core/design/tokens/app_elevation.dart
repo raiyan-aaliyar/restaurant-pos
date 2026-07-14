@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/design/tokens/app_palette.dart';
-import 'package:restobill/core/design/tokens/app_radius.dart';
+import 'package:yarpay/core/design/tokens/app_palette.dart';
+import 'package:yarpay/core/design/tokens/app_radius.dart';
 
 /// Elevation levels and shadow definitions for depth hierarchy.
 abstract final class AppElevation {

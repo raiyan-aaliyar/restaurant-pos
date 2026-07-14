@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:restobill/core/utils/responsive.dart';
-import 'package:restobill/features/shell/presentation/widgets/app_bottom_nav_bar.dart';
-import 'package:restobill/features/shell/presentation/widgets/app_navigation_rail.dart';
+import 'package:yarpay/core/utils/responsive.dart';
+import 'package:yarpay/features/shell/presentation/widgets/app_bottom_nav_bar.dart';
+import 'package:yarpay/features/shell/presentation/widgets/app_navigation_rail.dart';
 
 /// Root shell hosting bottom navigation (mobile) or navigation rail (tablet+).
 class MainShellScreen extends StatelessWidget {

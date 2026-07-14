@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/design/theme/app_design_extension.dart';
-import 'package:restobill/core/design/widgets/app_button_shell.dart';
+import 'package:yarpay/core/design/theme/app_design_extension.dart';
+import 'package:yarpay/core/design/widgets/app_button_shell.dart';
 
 /// Outlined secondary button for non-destructive alternate actions.
 ///

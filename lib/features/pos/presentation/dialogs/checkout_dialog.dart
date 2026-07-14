@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:restobill/features/pos/application/cart_provider.dart';
-import 'package:restobill/features/orders/application/order_provider.dart';
-import 'package:restobill/features/orders/domain/order.dart';
+import 'package:yarpay/features/pos/application/cart_provider.dart';
+import 'package:yarpay/features/orders/application/order_provider.dart';
+import 'package:yarpay/features/orders/domain/order.dart';
 
 class CheckoutDialog extends ConsumerStatefulWidget {
   const CheckoutDialog({super.key});

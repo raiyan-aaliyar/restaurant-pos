@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:restobill/core/widgets/app_scaffold.dart';
-import 'package:restobill/features/orders/application/order_provider.dart';
-import 'package:restobill/features/orders/presentation/widgets/order_card.dart';
-import 'package:restobill/features/orders/presentation/dialogs/order_details_dialog.dart';
+import 'package:yarpay/core/widgets/app_scaffold.dart';
+import 'package:yarpay/features/orders/application/order_provider.dart';
+import 'package:yarpay/features/orders/presentation/widgets/order_card.dart';
+import 'package:yarpay/features/orders/presentation/dialogs/order_details_dialog.dart';
 
 class OrdersScreen extends ConsumerWidget {
   const OrdersScreen({super.key});

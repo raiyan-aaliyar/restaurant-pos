@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/design/tokens/app_palette.dart';
+import 'package:yarpay/core/design/tokens/app_palette.dart';
 
 /// Theme extension exposing semantic design tokens beyond [ColorScheme].
 @immutable

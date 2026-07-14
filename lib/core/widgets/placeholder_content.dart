@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/utils/responsive.dart';
+import 'package:yarpay/core/utils/responsive.dart';
 
 /// Reusable placeholder content for feature screens awaiting business logic.
 class PlaceholderContent extends StatelessWidget {

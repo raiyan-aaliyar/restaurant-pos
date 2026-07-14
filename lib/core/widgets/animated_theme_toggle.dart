@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:restobill/core/design/tokens/app_animations.dart';
-import 'package:restobill/core/design/tokens/app_component_sizes.dart';
-import 'package:restobill/core/design/tokens/app_icon_sizes.dart';
-import 'package:restobill/core/design/tokens/app_radius.dart';
-import 'package:restobill/core/theme/theme_mode_provider.dart';
+import 'package:yarpay/core/design/tokens/app_animations.dart';
+import 'package:yarpay/core/design/tokens/app_component_sizes.dart';
+import 'package:yarpay/core/design/tokens/app_icon_sizes.dart';
+import 'package:yarpay/core/design/tokens/app_radius.dart';
+import 'package:yarpay/core/theme/theme_mode_provider.dart';
 
 /// Animated sun/moon toggle for switching between light and dark themes.
 class AnimatedThemeToggle extends ConsumerStatefulWidget {

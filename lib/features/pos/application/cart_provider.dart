@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:restobill/domain/entities/product.dart';
-import 'package:restobill/features/pos/application/cart_state.dart';
-import 'package:restobill/features/pos/domain/cart_item.dart';
+import 'package:yarpay/domain/entities/product.dart';
+import 'package:yarpay/features/pos/application/cart_state.dart';
+import 'package:yarpay/features/pos/domain/cart_item.dart';
 
 final cartProvider =
     NotifierProvider<CartNotifier, CartState>(CartNotifier.new);

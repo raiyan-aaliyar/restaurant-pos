@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/design/tokens/app_animations.dart';
-import 'package:restobill/core/design/tokens/app_component_sizes.dart';
-import 'package:restobill/core/design/tokens/app_icon_sizes.dart';
-import 'package:restobill/core/design/tokens/app_radius.dart';
-import 'package:restobill/core/design/tokens/app_spacing.dart';
+import 'package:yarpay/core/design/tokens/app_animations.dart';
+import 'package:yarpay/core/design/tokens/app_component_sizes.dart';
+import 'package:yarpay/core/design/tokens/app_icon_sizes.dart';
+import 'package:yarpay/core/design/tokens/app_radius.dart';
+import 'package:yarpay/core/design/tokens/app_spacing.dart';
 
 /// Selectable filter chip for menu categories, order status, and quick filters.
 ///

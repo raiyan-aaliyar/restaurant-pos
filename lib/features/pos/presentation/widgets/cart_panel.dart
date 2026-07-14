@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:restobill/features/pos/application/cart_provider.dart';
-import 'package:restobill/features/pos/presentation/widgets/cart_item_tile.dart';
-import 'package:restobill/features/pos/presentation/widgets/cart_summary.dart';
-import 'package:restobill/features/pos/presentation/widgets/checkout_button.dart';
-import 'package:restobill/features/pos/presentation/dialogs/checkout_dialog.dart';
+import 'package:yarpay/features/pos/application/cart_provider.dart';
+import 'package:yarpay/features/pos/presentation/widgets/cart_item_tile.dart';
+import 'package:yarpay/features/pos/presentation/widgets/cart_summary.dart';
+import 'package:yarpay/features/pos/presentation/widgets/checkout_button.dart';
+import 'package:yarpay/features/pos/presentation/dialogs/checkout_dialog.dart';
 
 class CartPanel extends ConsumerWidget {
   const CartPanel({super.key});

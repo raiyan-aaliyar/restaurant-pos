@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:restobill/core/constants/app_constants.dart';
-import 'package:restobill/core/design/tokens/app_animations.dart';
-import 'package:restobill/core/router/app_router.dart';
-import 'package:restobill/core/theme/app_theme.dart';
-import 'package:restobill/core/theme/theme_mode_provider.dart';
+import 'package:yarpay/core/constants/app_constants.dart';
+import 'package:yarpay/core/design/tokens/app_animations.dart';
+import 'package:yarpay/core/router/app_router.dart';
+import 'package:yarpay/core/theme/app_theme.dart';
+import 'package:yarpay/core/theme/theme_mode_provider.dart';
 
 /// Root application widget configured with theme and routing.
 class RestoBillApp extends ConsumerWidget {

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:restobill/core/constants/app_constants.dart';
-import 'package:restobill/core/design/theme/app_design_extension.dart';
-import 'package:restobill/core/design/tokens/app_component_sizes.dart';
-import 'package:restobill/core/design/tokens/app_palette.dart';
-import 'package:restobill/core/design/tokens/app_radius.dart';
-import 'package:restobill/core/design/tokens/app_spacing.dart';
-import 'package:restobill/core/design/tokens/app_typography.dart';
+import 'package:yarpay/core/constants/app_constants.dart';
+import 'package:yarpay/core/design/theme/app_design_extension.dart';
+import 'package:yarpay/core/design/tokens/app_component_sizes.dart';
+import 'package:yarpay/core/design/tokens/app_palette.dart';
+import 'package:yarpay/core/design/tokens/app_radius.dart';
+import 'package:yarpay/core/design/tokens/app_spacing.dart';
+import 'package:yarpay/core/design/tokens/app_typography.dart';
 
 /// Builds premium Material 3 themes from the RestoBill design tokens.
 abstract final class AppThemeBuilder {

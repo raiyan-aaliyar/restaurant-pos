@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/design/tokens/app_animations.dart';
-import 'package:restobill/core/design/tokens/app_icon_sizes.dart';
-import 'package:restobill/core/design/tokens/app_spacing.dart';
-import 'package:restobill/core/design/widgets/primary_button.dart';
-import 'package:restobill/core/design/widgets/secondary_button.dart';
+import 'package:yarpay/core/design/tokens/app_animations.dart';
+import 'package:yarpay/core/design/tokens/app_icon_sizes.dart';
+import 'package:yarpay/core/design/tokens/app_spacing.dart';
+import 'package:yarpay/core/design/widgets/primary_button.dart';
+import 'package:yarpay/core/design/widgets/secondary_button.dart';
 
 /// Placeholder UI for lists, search results, or screens with no data yet.
 ///

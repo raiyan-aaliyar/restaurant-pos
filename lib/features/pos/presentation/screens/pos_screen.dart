@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/features/pos/presentation/widgets/category_list.dart';
-import 'package:restobill/features/pos/presentation/widgets/product_grid.dart';
-import 'package:restobill/features/pos/presentation/widgets/search_section.dart';
-import 'package:restobill/features/pos/presentation/widgets/cart_panel.dart';
+import 'package:yarpay/features/pos/presentation/widgets/category_list.dart';
+import 'package:yarpay/features/pos/presentation/widgets/product_grid.dart';
+import 'package:yarpay/features/pos/presentation/widgets/search_section.dart';
+import 'package:yarpay/features/pos/presentation/widgets/cart_panel.dart';
 
 class PosScreen extends StatelessWidget {
   const PosScreen({super.key});

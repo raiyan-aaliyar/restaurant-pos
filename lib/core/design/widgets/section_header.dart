@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/design/tokens/app_spacing.dart';
-import 'package:restobill/core/utils/responsive.dart';
+import 'package:yarpay/core/design/tokens/app_spacing.dart';
+import 'package:yarpay/core/utils/responsive.dart';
 
 /// Section title with optional subtitle and trailing action widget.
 ///

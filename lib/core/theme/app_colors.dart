@@ -1,6 +1,6 @@
-import 'package:restobill/core/design/tokens/app_palette.dart';
+import 'package:yarpay/core/design/tokens/app_palette.dart';
 
-export 'package:restobill/core/design/tokens/app_palette.dart';
+export 'package:yarpay/core/design/tokens/app_palette.dart';
 
 /// Backward-compatible alias for [AppPalette] brand colors.
 abstract final class AppColors {

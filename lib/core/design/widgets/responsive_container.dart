@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/design/tokens/app_component_sizes.dart';
-import 'package:restobill/core/utils/responsive.dart';
+import 'package:yarpay/core/design/tokens/app_component_sizes.dart';
+import 'package:yarpay/core/utils/responsive.dart';
 
 /// Constrains content width and applies responsive padding per screen type.
 ///

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/design/theme/app_design_extension.dart';
-import 'package:restobill/core/design/tokens/app_radius.dart';
-import 'package:restobill/core/design/tokens/app_spacing.dart';
-import 'package:restobill/core/design/widgets/app_button_shell.dart';
-import 'package:restobill/core/design/widgets/primary_button.dart';
-import 'package:restobill/core/design/widgets/secondary_button.dart';
+import 'package:yarpay/core/design/theme/app_design_extension.dart';
+import 'package:yarpay/core/design/tokens/app_radius.dart';
+import 'package:yarpay/core/design/tokens/app_spacing.dart';
+import 'package:yarpay/core/design/widgets/app_button_shell.dart';
+import 'package:yarpay/core/design/widgets/primary_button.dart';
+import 'package:yarpay/core/design/widgets/secondary_button.dart';
 
 /// Branded confirmation dialog for destructive or irreversible actions.
 ///

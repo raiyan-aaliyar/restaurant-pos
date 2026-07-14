@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:restobill/features/orders/domain/order.dart';
+import 'package:yarpay/features/orders/domain/order.dart';
 
 final orderProvider =
     NotifierProvider<OrderNotifier, List<Order>>(

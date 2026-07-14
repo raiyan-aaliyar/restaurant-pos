@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/design/theme/app_design_extension.dart';
-import 'package:restobill/core/design/tokens/app_animations.dart';
-import 'package:restobill/core/design/tokens/app_elevation.dart';
-import 'package:restobill/core/design/tokens/app_radius.dart';
-import 'package:restobill/core/design/tokens/app_spacing.dart';
+import 'package:yarpay/core/design/theme/app_design_extension.dart';
+import 'package:yarpay/core/design/tokens/app_animations.dart';
+import 'package:yarpay/core/design/tokens/app_elevation.dart';
+import 'package:yarpay/core/design/tokens/app_radius.dart';
+import 'package:yarpay/core/design/tokens/app_spacing.dart';
 
 /// Premium card container for POS menu items, order rows, and metric tiles.
 ///

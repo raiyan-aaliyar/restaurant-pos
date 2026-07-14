@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:restobill/features/pos/application/cart_provider.dart';
-import 'package:restobill/features/pos/domain/cart_item.dart';
+import 'package:yarpay/features/pos/application/cart_provider.dart';
+import 'package:yarpay/features/pos/domain/cart_item.dart';
 
 class CartItemTile extends ConsumerWidget {
   const CartItemTile({

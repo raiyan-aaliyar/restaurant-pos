@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:restobill/features/pos/application/cart_provider.dart';
-import 'package:restobill/features/pos/application/filtered_product_provider.dart';
-import 'package:restobill/features/pos/presentation/widgets/product_card.dart';
+import 'package:yarpay/features/pos/application/cart_provider.dart';
+import 'package:yarpay/features/pos/application/filtered_product_provider.dart';
+import 'package:yarpay/features/pos/presentation/widgets/product_card.dart';
 
 class ProductGrid extends ConsumerWidget {
   const ProductGrid({

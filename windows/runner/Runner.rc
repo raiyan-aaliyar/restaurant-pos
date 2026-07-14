@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.restobill" "\0"
-            VALUE "FileDescription", "restobill" "\0"
+            VALUE "CompanyName", "com.Yarpay" "\0"
+            VALUE "FileDescription", "Yarpay" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "restobill" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2026 com.restobill. All rights reserved." "\0"
-            VALUE "OriginalFilename", "restobill.exe" "\0"
-            VALUE "ProductName", "restobill" "\0"
+            VALUE "InternalName", "Yarpay" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2026 com.Yarpay. All rights reserved." "\0"
+            VALUE "OriginalFilename", "Yarpay.exe" "\0"
+            VALUE "ProductName", "Yarpay" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

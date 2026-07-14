@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/design/theme/app_design_extension.dart';
-import 'package:restobill/core/design/tokens/app_animations.dart';
-import 'package:restobill/core/design/tokens/app_radius.dart';
-import 'package:restobill/core/design/tokens/app_spacing.dart';
+import 'package:yarpay/core/design/theme/app_design_extension.dart';
+import 'package:yarpay/core/design/tokens/app_animations.dart';
+import 'package:yarpay/core/design/tokens/app_radius.dart';
+import 'package:yarpay/core/design/tokens/app_spacing.dart';
 
 /// Loading indicator with optional shimmer skeleton placeholders.
 ///

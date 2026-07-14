@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/design/theme/app_design_extension.dart';
-import 'package:restobill/core/design/tokens/app_animations.dart';
-import 'package:restobill/core/design/tokens/app_component_sizes.dart';
-import 'package:restobill/core/design/tokens/app_icon_sizes.dart';
-import 'package:restobill/core/design/tokens/app_radius.dart';
-import 'package:restobill/core/design/tokens/app_spacing.dart';
+import 'package:yarpay/core/design/theme/app_design_extension.dart';
+import 'package:yarpay/core/design/tokens/app_animations.dart';
+import 'package:yarpay/core/design/tokens/app_component_sizes.dart';
+import 'package:yarpay/core/design/tokens/app_icon_sizes.dart';
+import 'package:yarpay/core/design/tokens/app_radius.dart';
+import 'package:yarpay/core/design/tokens/app_spacing.dart';
 
 /// Minimalist search input with animated focus border and clear action.
 ///

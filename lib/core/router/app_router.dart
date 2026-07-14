@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:restobill/core/router/app_routes.dart';
-import 'package:restobill/features/analytics/presentation/screens/analytics_screen.dart';
-import 'package:restobill/features/orders/presentation/screens/orders_screen.dart';
-import 'package:restobill/features/pos/presentation/screens/pos_screen.dart';
-import 'package:restobill/features/settings/presentation/screens/settings_screen.dart';
-import 'package:restobill/features/shell/presentation/screens/main_shell_screen.dart';
+import 'package:yarpay/core/router/app_routes.dart';
+import 'package:yarpay/features/analytics/presentation/screens/analytics_screen.dart';
+import 'package:yarpay/features/orders/presentation/screens/orders_screen.dart';
+import 'package:yarpay/features/pos/presentation/screens/pos_screen.dart';
+import 'package:yarpay/features/settings/presentation/screens/settings_screen.dart';
+import 'package:yarpay/features/shell/presentation/screens/main_shell_screen.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'root');
 

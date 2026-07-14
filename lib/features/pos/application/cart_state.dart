@@ -1,4 +1,4 @@
-import 'package:restobill/features/pos/domain/cart_item.dart';
+import 'package:yarpay/features/pos/domain/cart_item.dart';
 
 class CartState {
   final List<CartItem> items;

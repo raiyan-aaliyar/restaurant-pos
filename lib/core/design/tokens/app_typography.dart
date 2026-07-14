@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/design/tokens/app_palette.dart';
-import 'package:restobill/core/utils/responsive.dart';
+import 'package:yarpay/core/design/tokens/app_palette.dart';
+import 'package:yarpay/core/utils/responsive.dart';
 
 /// Typography scale for the RestoBill design system.
 abstract final class AppTypography {

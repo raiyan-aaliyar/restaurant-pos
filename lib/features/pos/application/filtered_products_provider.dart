@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:restobill/data/datasources/fake_data.dart';
-import 'package:restobill/domain/entities/product.dart';
+import 'package:yarpay/data/datasources/fake_data.dart';
+import 'package:yarpay/domain/entities/product.dart';
 
 import 'category_provider.dart';
 import 'search_provider.dart';

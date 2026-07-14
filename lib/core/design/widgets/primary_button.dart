@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/design/widgets/app_button_shell.dart';
+import 'package:yarpay/core/design/widgets/app_button_shell.dart';
 
 /// Primary call-to-action button with warm orange fill and press animation.
 ///

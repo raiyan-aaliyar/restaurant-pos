@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/domain/entities/product.dart';
+import 'package:yarpay/domain/entities/product.dart';
 
 class ProductCard extends StatelessWidget {
   final Product product;

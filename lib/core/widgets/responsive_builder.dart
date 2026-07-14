@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/utils/responsive.dart';
+import 'package:yarpay/core/utils/responsive.dart';
 
 /// Builds different layouts based on the current [ScreenType].
 class ResponsiveBuilder extends StatelessWidget {

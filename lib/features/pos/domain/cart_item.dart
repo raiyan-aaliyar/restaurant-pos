@@ -1,4 +1,4 @@
-import 'package:restobill/domain/entities/product.dart';
+import 'package:yarpay/domain/entities/product.dart';
 
 class CartItem {
   final Product product;

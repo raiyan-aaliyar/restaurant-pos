@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/constants/app_constants.dart';
-import 'package:restobill/core/utils/responsive.dart';
-import 'package:restobill/core/widgets/animated_theme_toggle.dart';
+import 'package:yarpay/core/constants/app_constants.dart';
+import 'package:yarpay/core/utils/responsive.dart';
+import 'package:yarpay/core/widgets/animated_theme_toggle.dart';
 
 /// Shared scaffold with app bar, theme toggle, and responsive content padding.
 class AppScaffold extends StatelessWidget {

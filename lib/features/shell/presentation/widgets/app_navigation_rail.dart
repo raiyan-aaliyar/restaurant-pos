@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/constants/app_constants.dart';
+import 'package:yarpay/core/constants/app_constants.dart';
 
 /// Material 3 navigation rail for tablet and large tablet layouts.
 class AppNavigationRail extends StatelessWidget {

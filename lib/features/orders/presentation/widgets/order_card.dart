@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import 'package:restobill/features/orders/domain/order.dart';
+import 'package:yarpay/features/orders/domain/order.dart';
 
 class OrderCard extends StatelessWidget {
   const OrderCard({

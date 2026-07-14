@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/constants/breakpoints.dart';
+import 'package:yarpay/core/constants/breakpoints.dart';
 
 /// Device form factors supported by the POS layout system.
 enum ScreenType {

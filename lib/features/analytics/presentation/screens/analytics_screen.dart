@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/widgets/app_scaffold.dart';
-import 'package:restobill/core/widgets/placeholder_content.dart';
-import 'package:restobill/core/widgets/responsive_builder.dart';
+import 'package:yarpay/core/widgets/app_scaffold.dart';
+import 'package:yarpay/core/widgets/placeholder_content.dart';
+import 'package:yarpay/core/widgets/responsive_builder.dart';
 
 /// Analytics dashboard screen placeholder.
 class AnalyticsScreen extends StatelessWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restobill/core/utils/responsive.dart';
+import 'package:yarpay/core/utils/responsive.dart';
 
 /// Standard icon sizing scale with responsive scaling.
 abstract final class AppIconSizes {

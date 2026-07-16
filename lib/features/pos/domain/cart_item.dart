@@ -21,3 +21,39 @@ class CartItem {
     );
   }
 }
+
+class ProductSnapshot implements Product {
+  @override
+  final String id;
+  @override
+  final String name;
+  @override
+  final String categoryId;
+  @override
+  final double price;
+  @override
+  final String image;
+  @override
+  final bool available;
+
+  const ProductSnapshot({
+    required this.id,
+    required this.name,
+    this.categoryId = '',
+    required this.price,
+    this.image = '🍽️',
+    this.available = true,
+  });
+
+  @override
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'category_id': categoryId,
+      'price': price,
+      'image': image,
+      'available': available,
+    };
+  }
+}

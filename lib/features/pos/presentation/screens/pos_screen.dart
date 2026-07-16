@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:yarpay/features/pos/application/product_provider.dart';
 import 'package:yarpay/features/pos/presentation/widgets/category_list.dart';
 import 'package:yarpay/features/pos/presentation/widgets/product_grid.dart';
 import 'package:yarpay/features/pos/presentation/widgets/search_section.dart';
 import 'package:yarpay/features/pos/presentation/widgets/cart_panel.dart';
 
-class PosScreen extends StatelessWidget {
+class PosScreen extends ConsumerWidget {
   const PosScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final productsState = ref.watch(productsProvider);
     final screenWidth = MediaQuery.of(context).size.width;
 
     int crossAxisCount = 2;
@@ -61,23 +64,19 @@ class PosScreen extends StatelessWidget {
                     flex: 3,
                     child: Column(
                       children: [
+                        if (productsState.isUsingCache)
+                          const _OfflineBanner(),
                         const SearchSection(),
-
                         const SizedBox(height: 20),
-
                         const CategoryList(),
-
                         const SizedBox(height: 20),
-
                         Expanded(
                           child: ProductGrid(crossAxisCount: crossAxisCount),
                         ),
                       ],
                     ),
                   ),
-
                   const SizedBox(width: 20),
-
                   const Expanded(child: CartPanel()),
                 ],
               );
@@ -85,19 +84,50 @@ class PosScreen extends StatelessWidget {
 
             return Column(
               children: [
+                if (productsState.isUsingCache)
+                  const _OfflineBanner(),
                 const SearchSection(),
-
                 const SizedBox(height: 20),
-
                 const CategoryList(),
-
                 const SizedBox(height: 20),
-
                 Expanded(child: ProductGrid(crossAxisCount: crossAxisCount)),
               ],
             );
           },
         ),
+      ),
+    );
+  }
+}
+
+class _OfflineBanner extends StatelessWidget {
+  const _OfflineBanner();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.orange.shade100,
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: Colors.orange.shade300),
+      ),
+      child: Row(
+        children: [
+          Icon(Icons.cloud_off_rounded, color: Colors.orange.shade700, size: 18),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              'Offline mode - showing cached menu. Changes won\'t sync until online.',
+              style: TextStyle(
+                color: Colors.orange.shade800,
+                fontSize: 12,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

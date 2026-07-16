@@ -2,6 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:yarpay/domain/entities/product.dart';
 import 'package:yarpay/features/pos/application/cart_state.dart';
 import 'package:yarpay/features/pos/domain/cart_item.dart';
+import 'package:yarpay/features/settings/application/settings_provider.dart';
 
 final cartProvider =
     NotifierProvider<CartNotifier, CartState>(CartNotifier.new);
@@ -9,7 +10,11 @@ final cartProvider =
 class CartNotifier extends Notifier<CartState> {
   @override
   CartState build() {
-    return const CartState();
+    final settings = ref.watch(settingsProvider);
+    return CartState(
+      gstEnabled: settings.gstEnabled,
+      gstRate: settings.gstRate,
+    );
   }
 
   void addProduct(Product product) {
@@ -79,6 +84,20 @@ class CartNotifier extends Notifier<CartState> {
     }
 
     state = state.copyWith(items: updatedItems);
+  }
+
+  void setDiscount(DiscountType type, double value) {
+    state = state.copyWith(
+      discountType: type,
+      discountValue: value,
+    );
+  }
+
+  void clearDiscount() {
+    state = state.copyWith(
+      discountType: DiscountType.none,
+      discountValue: 0,
+    );
   }
 
   void clearCart() {

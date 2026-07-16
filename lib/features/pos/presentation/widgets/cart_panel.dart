@@ -42,6 +42,10 @@ class CartPanel extends ConsumerWidget {
               subtotal: cart.subtotal,
               tax: cart.tax,
               total: cart.total,
+              gstEnabled: cart.gstEnabled,
+              gstRate: cart.gstRate,
+              discountType: cart.discountType,
+              discountAmount: cart.discountAmount,
             ),
             const SizedBox(height: 16),
 

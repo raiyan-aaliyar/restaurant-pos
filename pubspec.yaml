@@ -22,6 +22,8 @@ dependencies:
   printing: ^5.13.4
   share_plus: ^10.1.4
   path_provider: ^2.1.5
+  shared_preferences: ^2.3.4
+  fl_chart: ^0.70.2
 
 dev_dependencies:
   flutter_test:

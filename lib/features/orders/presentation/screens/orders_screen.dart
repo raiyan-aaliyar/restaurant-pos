@@ -18,24 +18,22 @@ class OrdersScreen extends ConsumerWidget {
           ? const _EmptyOrdersView()
           : RefreshIndicator(
               onRefresh: () async {
-                // Future: Reload orders from database
+                await ref.read(orderProvider.notifier).refresh();
               },
               child: ListView.builder(
                 padding: const EdgeInsets.all(16),
                 itemCount: orders.length,
                 itemBuilder: (context, index) {
-                  final order = orders.reversed.toList()[index];
+                  final order = orders[index];
 
                   return OrderCard(
                     order: order,
-onTap: () {
-  showDialog(
-    context: context,
-    builder: (_) => OrderDetailsDialog(
-      order: order,
-    ),
-  );
-},
+                    onTap: () {
+                      showDialog(
+                        context: context,
+                        builder: (_) => OrderDetailsDialog(order: order),
+                      );
+                    },
                   );
                 },
               ),
@@ -69,9 +67,7 @@ class _EmptyOrdersView extends StatelessWidget {
           SizedBox(height: 8),
           Text(
             'Completed orders will appear here.',
-            style: TextStyle(
-              color: Colors.grey,
-            ),
+            style: TextStyle(color: Colors.grey),
           ),
         ],
       ),
